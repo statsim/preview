@@ -74,7 +74,7 @@ dd {
   bottom: 0;
   left: 0;
   right: 0;
-  height: 15%;
+  height: 40%;
   background: rgb(255,255,255);
   background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
   text-align: center;
@@ -83,10 +83,11 @@ dd {
   justify-content: center;
   align-content: flex-end;
   align-items: center;
+  pointer-events: none;
 }
 
 #overlay button {
-  margin-top:
+  box-shadow: 0 0 40px #fff;
 }
 
 .block {

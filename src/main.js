@@ -37,6 +37,11 @@ function process (files) {
   output.appendChild(container)
   const overlay = document.getElementById('overlay')
   overlay.style.display = 'flex'
+  if (size > 1000000) {
+    document.getElementById('load').innerText = '⤷ Load all (' + (size / 1000000).toFixed(2) + ' MB)'
+  } else {
+    document.getElementById('load').innerText = '⤷ Load all (' + (size / 1000).toFixed(2) + ' kB)'
+  }
 
   console.log('[Preview] Selected file size:', size)
 
