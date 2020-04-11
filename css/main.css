@@ -88,6 +88,7 @@ dd {
 
 #overlay button {
   box-shadow: 0 0 40px #fff;
+  pointer-events: all;
 }
 
 .block {

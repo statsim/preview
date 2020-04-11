@@ -1,6 +1,6 @@
 {
   "name": "preview",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Preview files of any size in the browser",
   "main": "src/main.js",
   "scripts": {
@@ -9,13 +9,16 @@
     "watch": "nodemon --watch src --ext js,css,html --exec 'npm run build-dev'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/statsim/preview.git"
+  },
+
   "author": "Anton Zemlyansky",
   "license": "MIT",
   "dependencies": {
-    "csv-parse": "^4.8.8",
     "drag-and-drop-files": "0.0.1",
     "filestream": "^5.0.0",
-    "handsontable": "^6.2.0",
     "through2": "^3.0.1"
   },
   "devDependencies": {

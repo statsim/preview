@@ -1,7 +1,6 @@
 const ReadStream = require('filestream').read
 const through2 = require('through2')
 const dnd = require('drag-and-drop-files')
-// const parseStream = require('csv-parse')
 
 const drag = document.getElementById('drag')
 
