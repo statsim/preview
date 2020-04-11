@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>StatSim Preview. Explore files of any size in the browser</title>
+    <link rel="stylesheet" href="css/main.css" media="screen">
+    <link rel="stylesheet" href="css/roboto.css" media="screen">
+  </head>
+  <body>
+    <h3 id="logo">preview</h3>
+    <input id="input" type="file" multiple="false"></input>
+    <p id="stats"></p>
+    <div id="overlay">
+      <button id="load">Load all</button>
+    </div>
+    <div id="output"></div>
+    <div id="progress"></div>
+    <div id="drag">
+      <div class="drag-icon">↶</div>
+      <div class="drag-text">
+        <h4>Drag & Drop file here</h4>
+        <p>The app loads data by small chunks, so you can preview files of any size.<br> Everything happens on your machine, so no data is sent to the server</p>
+      </div>
+    </div>
+    <script src="dist/bundle.js"></script>
+  </body>
+</html>

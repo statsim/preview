@@ -1,0 +1,196 @@
+html, body {
+  font-family: Roboto, "Noto Sans", Noto, sans-serif;
+  font-weight: 300;
+}
+
+dl {
+  width: 100%;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+}
+
+dt {
+  float: left;
+  padding: 0;
+  margin: 5px 10px 2px 0;
+  clear: left;
+}
+
+dd {
+  float: left;
+  padding: 0;
+  margin: 5px 10px 2px 0;
+  font-weight: 500;
+}
+
+#logo {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  margin: 0;
+  padding: 5px 6px 5px 6px;
+  font-weight: 700;
+  font-size: 18px;
+  z-index: 100;
+}
+
+.section {
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.summary, #stats, #input, .datahead {
+  margin-left: 10px;
+}
+
+#input {
+  font-weight: 300;
+  margin-top: 9px;
+}
+
+#input, #stop, #load {
+  font-size: 14px;
+}
+
+
+#progress {
+  background: #00a9ff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+}
+
+#output pre {
+  margin: 10px;
+}
+
+#overlay {
+  display: none;
+  padding: 20px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 15%;
+  background: rgb(255,255,255);
+  background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+  text-align: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-end;
+  align-items: center;
+}
+
+#overlay button {
+  margin-top:
+}
+
+.block {
+  display: inline-block;
+  margin: 10px;
+  padding: 2px 15px 10px 15px;
+  box-shadow: 0 0 20px #E3E3E3;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-content: flex-start;
+  align-items: flex-start;
+}
+
+.block .name-block {
+  min-width: 300px;
+  margin-left: 8px;
+}
+
+.block .variable-type {
+  margin-top: 5px;
+  font-size: 12px;
+  font-weight: 400;
+  background-color:#EEE;
+  display: inline-block;
+  padding: 4px 7px;
+}
+
+.block h4 {
+  margin: 15px 0 5px;
+  font-size: 20px;
+}
+
+.block .name-block h4 {
+  font-weight: 500;
+}
+
+.block .stat-block {
+  width: 100%;
+}
+
+.block .stat-block h4 {
+  font-weight: 300;
+}
+
+.block .count-chart, .block .hist-chart {
+  padding: 5px;
+}
+
+.datahead {
+  overflow: auto;
+}
+
+.datahead .title {
+  margin: 10px 0 10px;
+}
+
+.datahead table {
+  font-size: 14px;
+  border-collapse: collapse;
+  border: none;
+}
+
+.datahead table tr {
+  border-bottom: 1px solid #E7E7E7;
+}
+
+.datahead table tr:nth-child(1) {
+  border-top: 2px solid #00a9ff;
+}
+
+.datahead table tr:nth-child(odd) {
+  background: #F3F3F3;
+}
+
+.datahead table td, .datahead table th {
+  padding: 4px 8px;
+}
+
+#drag {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  text-align: center;
+  padding: 30px 40px;
+  border: 2px dashed #a0cbff;
+  border-radius: 10px;
+}
+
+#drag .drag-icon {
+  font-family: sans-serif;
+  font-size: 50px;
+  color: #00a9ff;
+}
+
+#drag .drag-text h4 {
+  font-weight: 300;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+#drag .drag-text p {
+  font-size: 12px;
+}

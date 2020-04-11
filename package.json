@@ -1,0 +1,26 @@
+{
+  "name": "preview",
+  "version": "0.0.1",
+  "description": "Preview files of any size in the browser",
+  "main": "src/main.js",
+  "scripts": {
+    "build": "browserify src/main.js | uglifyjs -cm > dist/bundle.js",
+    "build-dev": "browserify src/main.js -o dist/bundle.js --debug",
+    "watch": "nodemon --watch src --ext js,css,html --exec 'npm run build-dev'",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Anton Zemlyansky",
+  "license": "MIT",
+  "dependencies": {
+    "csv-parse": "^4.8.8",
+    "drag-and-drop-files": "0.0.1",
+    "filestream": "^5.0.0",
+    "handsontable": "^6.2.0",
+    "through2": "^3.0.1"
+  },
+  "devDependencies": {
+    "browserify": "^16.5.1",
+    "nodemon": "^2.0.3",
+    "uglify-es": "^3.3.9"
+  }
+}
