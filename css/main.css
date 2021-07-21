@@ -80,6 +80,7 @@ dd {
   align-content: flex-end;
   align-items: center;
   pointer-events: none;
+  z-index: 100;
 }
 
 #overlay button {
