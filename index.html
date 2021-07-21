@@ -4,25 +4,69 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <title>StatSim Preview. Explore files of any size in the browser</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="css/main.css" media="screen">
-    <link rel="stylesheet" href="css/roboto.css" media="screen">
+    <link type="text/css" rel="stylesheet" href="https://statsim.com/assets/common.css" media="screen"/>
   </head>
   <body>
-    <h3 id="logo">preview</h3>
-    <input id="input" type="file" multiple="false"></input>
+    <div class="status-bar grey-bar">
+      <div class="container">
+        <div class="row">
+          <div class="col s12" style="font-size: 14px;">
+            <div id="menu"></div>
+            <a href="https://statsim.com/">StatSim</a> → <b>Preview</b>
+            <input id="input" type="file" multiple="false" style="margin-top: 6px;"></input>
+          </div>
+        </div>
+        <!--
+        <div class="row">
+          <div class="col s12" style="font-size: 14px;">
+            <input id="search" type="text" placeholder="Search..."></input>
+          </div>
+        </div>
+        -->
+      </div>
+    </div>
     <p id="stats"></p>
     <div id="overlay">
       <button id="load">Load all</button>
     </div>
-    <div id="output"></div>
-    <div id="progress"></div>
-    <div id="drag">
-      <div class="drag-icon">↶</div>
-      <div class="drag-text">
-        <h4>Drag & Drop file here</h4>
-        <p>The app loads data by small chunks, so you can preview files of any size.<br> Everything happens on your machine, so no data is sent to the server</p>
+    <div class="container" style="position: relative">
+      <div class="row">
+        <div id="output"></div>
       </div>
     </div>
+    <div id="progress"></div>
+    <div class="container" style="position: relative">
+      <div class="row">
+        <div id="drag">
+          <div class="drag-icon">↶</div>
+          <div class="drag-text">
+            <h4>Drag & drop file here to preview</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="description" class="grey-bar">
+      <div class="container">
+        <div class="row">
+          <div class="col m12">
+            <h1>Preview large text files online</h1>
+            <h2>Load any text-based file of arbitrary size in your browser</h2>
+            <p>The app loads data in small chunks, so you can preview files of any size. Everything happens on your machine, so no data is sent to the server</p>
+            <p>
+              <a class="github-button" href="https://github.com/statsim/preview" data-icon="octicon-star" data-show-count="true" aria-label="Star statsim/preview on GitHub">Star</a>
+              <a class="github-button" href="https://github.com/statsim/preview/issues" data-icon="octicon-issue-opened" data-show-count="true" aria-label="Issue statsim/preview on GitHub">Issue</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://statsim.com/assets/common.js"></script>
     <script src="dist/bundle.js"></script>
   </body>
 </html>
