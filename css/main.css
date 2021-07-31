@@ -168,16 +168,10 @@ dd {
 }
 
 #drag {
-  /*
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  top: 50%;
-  */
   text-align: center;
   padding: 30px 40px;
   margin: 50px auto 50px auto;
-  border: 2px dashed #a0cbff;
+  border: 2px dashed #e0e0e0;
   border-radius: 10px;
   width: 50%;
 }
